@@ -1098,3 +1098,145 @@ text-align: left;
     overflow-wrap: break-word;
 
     }
+.loginimg{
+    width: 50%;
+    background-color: red;
+    padding: 19px;
+    height: 100%;
+    background: linear-gradient(180.09deg,rgba(0,0,0,.176) 27.66%,rgba(0,0,0,.8) 78.79%),url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: 50%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+
+}
+    .logincontainer{
+        display: flex;
+        gap: 10px;
+        width: 100%;
+        height: 100vh;
+    
+        align-items: center;
+    }
+
+    .logindata{
+        width: 100%;
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        padding: 90px;
+        background-image: url(https://img.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg?w=740&t=st=1706029599~exp=1706030199~hmac=98b634ad9ac04416200964c9bad7e591963e9f51afedd005424c6db1cccbfaa6);
+        background-position: bottom;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .loginform{
+        width: 400px;
+ 
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        flex-direction: column;
+    }
+.logintitle{
+    color: #023047;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+    .inputbox{
+        display: flex;
+    flex-direction: column;
+    gap: 10px;    
+    }
+.inputboxes{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 19px;
+}
+    .loginform input{
+        width: 100%;
+        padding: 9px;
+        border-radius: 4px;
+border: 1px solid #9198b2;
+background: #F7FBFF;
+color: #161616;
+outline: none;
+
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 16px */
+letter-spacing: 0.16px;
+    }
+
+    .loginform button{
+        padding: 9px;
+        border-radius: 6px;
+background: #162D3A;
+border: 1px solid #162D3A;
+color: #d7dde6;
+margin-top: 10px;
+    }
+
+    label{
+        color: #023047de;
+font-size: 14px;
+font-style: normal;
+font-weight: 800;
+line-height: 100%; /* 16px */
+letter-spacing: normal;
+
+
+    }
+
+
+.fgot{
+    color: #00000099;
+    text-decoration: none;
+    transition: .5s;
+    margin-top: -3px;
+}
+    .loginsubtitle{
+        margin-top: 4px;
+        text-align: center;
+        color: rgb(59, 59, 59);
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 150%;
+        margin-top: 4px;
+        text-align: center;
+    }
+
+    .mpawa {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        padding: 0px;
+        height: 100%;
+    }
+
+    .mpawatext{
+        display: flex;
+        margin-top: auto;
+        color: #c1c3cb;
+font-size: 14px;
+font-style: italic;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 150%;
+   
+        text-align: left;
+
+    }
