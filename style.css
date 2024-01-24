@@ -1245,15 +1245,16 @@ font-style: italic;
         width: 100%;
         min-height: 100vh;
         display: flex;
+overflow: hidden;
 
     }
 
     .sidebar{
-        width: 300px;
+        width: 290px;
         display: flex;
         flex-direction: column;
         gap: 20px;
-  
+        height: 100vh;
         padding: 20px;
         background: #F2F2F2;
     }
@@ -1264,23 +1265,57 @@ font-style: italic;
         margin-left: auto;
         margin-right: auto;
         padding: 20px;
-        
+        height: 100vh;
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-image: url('https://raw.githubusercontent.com/Manlikevee/jobportal/dfded41b3ff0822a7ec41466fb71914a056cb671/transparentTriangle.svg');
+
     }
 
     .dhead{
    
         padding: 10px;
         margin-top: 10px;
-        margin-bottom: 40px;
+        padding-bottom: 19px;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
     }
-
+.dashboard .dhead{
+    margin-top: 1px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
     .sidelinks{
         display: flex;
         flex-direction: column;
         gap: 20px;
         width: 100%;
     }
+    .section-title-wrapper {
+        padding-block: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
 
+    .section-title{
+        font-size: 1rem;
+font-weight: 700;
+        font-family: Manrope;
+        font-size: 16px;
+    }
+
+    .recenttext{
+        font-size: 1rem;
+        padding-block: 10px;
+        font-family: Manrope;
+        font-size: 15px;
+    }
     .slink{
         color: #808080;
         width: 100%;
@@ -1393,22 +1428,26 @@ line-height: 24px; /* 150% */
 }
     .profiledropdown{
         width: 30%;
-        background-color: red;
+    
         padding: 10px;
   
         display: flex;
     }
+
 .dashboardcontent{
-    padding: 10px;
+  
     width: 100%;
     display: flex;
-    gap: 10px;
+    gap: 5px;
+    flex-direction: column;
+ 
+
 }
     .welcometext{
         padding-top: 5px;
         color: #4C4C4C;
 font-family: Manrope;
-font-size: 17px;
+font-size: 15px;
 font-style: normal;
 font-weight: 600;
 line-height: 32px; /* 177.778% */
@@ -1424,15 +1463,317 @@ line-height: 32px; /* 177.778% */
 
     .dashtwo{
         width: 30%;
-        background-color: red;
+
         padding: 1px;
+        height: fit-content;
     }
 
     .dashcard{
         display: flex;
         gap: 10px;
         border-radius: 4px;
-padding: 15px;
+        border-radius: 5.796px;
+background: #FFF;
+padding: 10px;
+background-image: url('Line\ background.png');
 width: fit-content;
-background: #212121;
+border: 1px solid rgba(204, 204, 204, 0.632);
+min-width: 300px;
+
+align-items: center;
+background-size: contain;
+background-position: right;
+background-repeat: no-repeat;
+    }
+
+    .dashvalue{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dashamount{
+        color: var(--Gray-800, #1D2939);
+        font-family: Manrope;
+        font-size: 28.775px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 40.503px; /* 122.222% */
+    }
+
+    .dashtitle{
+        color: var(--Gray-700, #344054);
+        font-family: Manrope;
+        font-size: 13.456px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23.183px; /* 150% */
+    }
+
+    .fig{
+        color: var(--Gray-900, #101828);
+font-family: Manrope;
+font-size: 15.319px;
+font-style: normal;
+font-weight: 600;
+line-height: 28.979px; /* 150% */
+    }
+
+    .recenttransac{
+        width: 100%;
+
+overflow-x: hidden;
+
+    }
+
+    .dashflex{
+        display: flex;
+        gap:30px;
+    }
+
+    .recenttable{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        border-radius: 3px;
+        border-radius: 4px;
+background: #FCFCFC;
+
+    }
+
+    .recenttableheader{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        color: #fff;
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 16px; /* 133.333% */
+        background: #101828;
+        padding: 16px;
+        border-radius: 3px;
+    }
+
+    .recenttableheader .fd{
+        color: #fff;
+        font-family: Manrope;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;   
+    }
+.recenttablebody{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    color: #808080;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    align-items: center;
+    line-height: 16px; /* 133.333% */
+    background: #ffffff7c;
+    padding: 13px;
+    transition: 0.4s ease-out;
+    border-bottom: 1px solid #ccc;
+}
+
+.recenttablebody .name{
+    color: #000;
+font-family: Manrope;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 133.333% */
+}
+    .fd{
+        width: 100%;
+    }
+
+.success .bar{
+    font-family: Manrope;
+    background: #DEEDE5;
+color: #427A5B;
+}
+.success .type{
+    font-family: Manrope;
+    color: #427A5B;
+    font-weight: 700 !important;
+}
+.failed .type{
+    font-family: Manrope;
+    color: #A65959;
+    font-weight: 700 !important;
+}
+.pending .bar{
+    font-family: Manrope;
+    border-radius: 4px;
+    background: #FDF8CE;
+    color: #938406;
+    font-weight: 900 !important;
+}
+
+.failed .bar{
+    background: #FDF8CE;
+    border-radius: 4px;
+background: #EDDEDE;
+    color: #A65959;
+}
+.recenttablebody:hover{
+    background: #b4cd9362;
+}
+
+    .bar{
+        font-size: 13px;
+        display: flex;
+        width: fit-content;
+        justify-content: center;
+        padding: 5px;
+  
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 3px;
+
+    }
+
+    .buy-thumb {
+        background: #10d876;
+        color: #fff;
+        border-radius: 15px;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .sold-thumb {
+        background: #ff788e;
+        color: #fff;
+        border-radius: 50px;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .transactionlogo {
+        width: 5%;
+    }
+
+    .pname{
+        font-size:  0.813rem;
+        color: hsl(207, 8%, 21%);
+    }
+
+    .pphoto{
+        overflow: hidden;
+    border-radius: 6px;
+    }
+
+    .pstatus{
+        color: #8b91a2;
+        font-size: 0.813rem;
+        margin-top: -5px;
+    }
+
+    .profile{
+        display: flex;
+        gap: 5px;
+        margin-left: auto;
+    }
+
+    .pp{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pendingtalk {
+        padding: 20px;
+        border-radius: 4px;
+        font-size: 14px;
+        width: 100%;
+        background: #B4CD93;
+        color: #000;
+    }
+    .pendingtalk.failed{
+        background-color: #fff2c6c0;
+        color: #000;
+    }
+
+    .detailindetail {
+        background-color: #F2F2F2;
+        padding: 24px;
+        width: 100%;
+        box-shadow: 0px 4px 13px 0px #00000008;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+    }
+    .detailpage {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        font-family: Manrope;
+        padding: 10px;
+    }
+    .topdetail {
+        width: 100%;
+        border-bottom: 1px solid #A5ABAD;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        display: grid;
+        
+    }
+.termtitle{
+    color: #0C231f;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: flex;
+    gap: 7px;
+}
+    .detailflex {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .topdet {
+        color: #023047;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        font-family: Manrope;
+    }
+
+    .bottomdet {
+        margin-top: 1px;
+        font-size: 15px;
+        line-height: 1.7;
+        color: #000000E8;
+        font-family: poppins;
+    }
+    
+    .bottomdet {
+        width: 100%;
+    }    
+
+    .bottomdetail {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        display: grid;
     }
