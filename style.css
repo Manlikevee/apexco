@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
   
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
-  
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lexend:wght@300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 body, *{
     font-family: 'Poppins', sans-serif;
@@ -1239,4 +1238,201 @@ font-style: italic;
    
         text-align: left;
 
+    }
+
+
+    .dashboardcontainer{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+
+    }
+
+    .sidebar{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+  
+        padding: 20px;
+        background: #F2F2F2;
+    }
+
+    .dashboard{
+        width: 100%;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        
+    }
+
+    .dhead{
+   
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .sidelinks{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .slink{
+        color: #808080;
+        width: 100%;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+display: flex;
+border-radius: 4px;
+padding: 12px 24px 12px 16px;
+align-items: center;
+gap: 12px;
+transition: 0.1s ease-in;
+
+    }
+
+    .endlink{
+        display: flex;
+        border-top: 1px solid #ccc;
+        margin-top: auto;
+    }
+
+    .endlink.slink{
+        color: red;
+    }
+    .slink.active{
+        border-radius: 4px;
+        background: #B4CD93;
+        color: #4C4C4C;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+    }
+
+    .slink:hover{
+        background: #b4cd9362;
+    }
+
+    .dhead{
+        display: flex;
+        gap: 10px;
+        font-family: Manrope;
+font-size: 16px;
+font-weight: 900;
+align-items: center;
+    }
+
+    .dhead .dv{
+        font-family: Manrope;
+        font-size: 16px;
+        font-size: 16px;
+font-weight: 900;
+align-items: center;
+    }
+
+    .dhead .dv span{
+        font-family: Manrope;
+        font-size: 16px;
+        font-size: 16px;
+font-weight: 900;
+align-items: center;
+color: #639f15; 
+    }
+
+
+    .dflex{
+        margin-top: -3px;
+        display: flex;
+        gap: 80px;
+    }
+
+    .transactioninput{
+        width: 70%;
+        display: flex;
+     align-items: center;
+        padding: 7px;
+        gap: 4px;
+        border-radius: 4px;
+        border: 1px solid #E6E6E6;
+        background: #FAFAFA;
+
+    }
+
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content:center ;
+        color: #4c4c4cc1;
+font-family: Manrope;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+
+    }
+.transactioninput input{
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: #4C4C4C;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+    .profiledropdown{
+        width: 30%;
+        background-color: red;
+        padding: 10px;
+  
+        display: flex;
+    }
+.dashboardcontent{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+    .welcometext{
+        padding-top: 5px;
+        color: #4C4C4C;
+font-family: Manrope;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 32px; /* 177.778% */
+    }
+
+
+    .dashone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dashtwo{
+        width: 30%;
+        background-color: red;
+        padding: 1px;
+    }
+
+    .dashcard{
+        display: flex;
+        gap: 10px;
+        border-radius: 4px;
+padding: 15px;
+width: fit-content;
+background: #212121;
     }
