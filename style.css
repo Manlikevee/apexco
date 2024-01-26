@@ -1316,6 +1316,12 @@ font-weight: 700;
         font-family: Manrope;
         font-size: 15px;
     }
+    
+    .smallest{
+        width: fit-content;
+        min-width: fit-content;
+    }
+
     .slink{
         color: #808080;
         width: 100%;
@@ -1333,6 +1339,11 @@ transition: 0.1s ease-in;
 
     }
 
+
+    .dashcards{
+        display: flex;
+        gap: 12px;
+    }
     .endlink{
         display: flex;
         border-top: 1px solid #ccc;
